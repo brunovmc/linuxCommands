@@ -33,8 +33,9 @@ body{
   height: 100%;
   text-align: center;
 
-  margin-top: 5%;
+  margin-top: 19%;
   font-size: 3em;
+	z-index: -1;
 }
 
 .content{
@@ -96,6 +97,7 @@ ul li{
   padding: 0;
   margin: 0;
 	margin-bottom: 5%;
+	
 }
 
 #myUL li a {
@@ -134,17 +136,35 @@ ul li{
   background-color: #eee;
 }
 
+.inputTitle{
+	position: sticky!important;
+	top: 0;
+	z-index: 1;
+	font-size: 3em;
+	margin-left: 23%;
+	width: 80%;
+}
+
 .decoration{
-	color: green;
-	font-size: 2em;
+	color: #53ba23;
+	font-size: 0.9em;
 	display: inline;
 	position: fixed;
-	margin-left: 47%;
-	margin-top: -23%;
+	margin-left: -12.8%;
+	margin-top: -16.8%;
+	z-index: -2;
+	transform: rotate(-13deg);
+}
+.decorationP{
+	color: #53ba23;
+	font-size: 0.9em;
+  display: inline;
+	position: fixed;
+	margin-left: -65.8%;
+	margin-top: 31.8%;
 	z-index: 0;
 	transform: rotate(-13deg);
 }
-
 
 .show {
   transition: opacity 400ms;
