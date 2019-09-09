@@ -134,6 +134,13 @@ ul li{
   background-color: #eee;
 }
 
+.decoration{
+	color: green;
+	font-size: 2em;
+	display: inline;
+	position: fixed;
+}
+
 
 .show {
   transition: opacity 400ms;
