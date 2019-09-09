@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Linux Terminology</title>
+    	<link rel="stylesheet" type="text/css" href="main.css">
+
+  </head>
+  <body>
+    <div class="header">
+      <h1>Linux terminology</h1>
+      <input type="text" id="myInput" onkeyup="searchList()" placeholder="Search for terms.." title="Type in a name">
+      <button onclick="sortListDir()">order</button>
+    </div>
+
+
+
+
+    <ul class="list" id=myUL>
+      <li id="kernel">kernel<a href="#kernel"  class="clickable-heading" >kernel</a>
+        <div class="content hide">
+            <h2>kernel</h2>
+            <p>glue between hardware and applications</p>
+            <p>The boot loader loads both the kernel and an initial RAM–based file system (initramfs) into memory, so it can be used directly by the kernel.</p>
+            <p>When the kernel is loaded in RAM, it immediately initializes and configures the computer’s memory and also configures all the hardware attached to the system.</p>
+            <p> This includes all processors, I/O subsystems, storage devices, etc. The kernel also loads some necessary user space applications.</p>
+            <img src="kernel.jpg" alt="">
+        </div>
+      </li>
+      <li id="distribution">distribution<a href="#distribution"  class="clickable-heading">distribution</a>
+        <div class="content hide">
+            <h2>distribution</h2>
+            <p>	collections of software making up a linux based OS</p>
+        </div>
+      </li>
+      <li id="post">post<a href="#post"  class="clickable-heading">POST</a>
+        <div class="content hide">
+            <h2>POST (Power On Self Test)</h2>
+            <p>	collections of software making up a linux based OS</p>
+        </div>
+      </li>
+      <li id="MasterBootRecord">Master Boot Record (MBR)<a href="#MasterBootRecord"  class="clickable-heading">MBR</a>
+        <div class="content hide">
+            <h2>Master Boot Record (MBR) </h2>
+            <p>Once the POST is completed, the system control passes from the BIOS to the boot loader.</p>
+            <p> The boot loader is usually stored on one of the hard disks in the system,</p>
+            <p> either in the boot sector (for traditional BIOS/MBR systems) or the EFI partition (for more recent (Unified) Extensible Firmware Interface or EFI/<a href="#uefi" class="link">UEFI</a> systems).</p>
+            <p> Up to this stage, the machine does not access any mass storage media.</p>
+            <p> Thereafter, information on date, time, and the most important peripherals are loaded from the CMOS values</p>
+            <p>(after a technology used for the battery-powered memory store which allows the system to keep track of the date and time even when it is powered off).</p>
+            <p>A number of boot loaders exist for Linux; the most common ones are</p>
+            <p> GRUB (for GRand Unified Boot loader),</p>
+            <p>ISOLINUX (for booting from removable media),</p>
+            <p>and DAS U-Boot (for booting on embedded devices/appliances).</p>
+            <p>When booting Linux, the boot loader is responsible for loading the kernel image and the initial RAM disk or filesystem</p>
+            <p>(which contains some critical files and device drivers needed to start the system) into memory.</p>
+            <img src="masterBootRecord.jpg" alt="">
+        </div>
+      </li>
+      <li id="bootLoader">boot loader<a href="#bootLoader"  class="clickable-heading">boot loader</a>
+        <div class="content hide">
+            <h2>boot loader</h2>
+            <p>A boot loader is a program responsible for loading the Linux kernel with optional kernel parameters and the Linux initial RAM disk, known as initrd.</p>
+            <p>Linux kernel is the core of the Linux operating system, and it starts the init (short for initialization) process, or an init replacement such as systemd, immediately after being loaded.</p>
+            <p>The Linux initial RAM disk provides a temporary storage space for loading critical files into memory before the real root file system can be mounted.</p>
+            <img src="bootLoader.jpg" alt="">
+        </div>
+      </li>
+      <li id="service">service<a href="#service" class="clickable-heading">service</a>
+        <div class="content hide">
+            <h2>service</h2>
+        </div>
+      </li>
+      <li id="filesystem">filesystem<a href="#filesystem" class="clickable-heading">filesystem</a>
+        <div class="content hide">
+            <h2>filesystem</h2>
+        </div>
+      </li>
+      <li id="xWindowSystem">X Window system<a href="#xWindowSystem"  class="clickable-heading">X Window system</a>
+        <div class="content hide">
+            <h2>X Window system</h2>
+        </div>
+      </li>
+      <li id="GUI">GUI (Graphical User Interface)<a href="#GUI"  class="clickable-heading">GUI</a>
+        <div class="content hide">
+            <h2>GUI (Graphical User Interface)</h2>
+        </div>
+      </li>
+      <li id="bash">bash<a href="#bash"  class="clickable-heading">bash</a>
+        <div class="content hide">
+            <h2>bash (Bourne Again Shell)</h2>
+            <p>Bash is a command processor that typically runs in a text window where the user types commands that cause actions.</p>
+            <p>Bash can also read and execute commands from a file, called a shell script.</p>
+            <p>Like all Unix shells, it supports filename globbing (wildcard matching), piping, here documents, command substitution, variables, and control structures for condition-testing and iteration.</p>
+            <p>The keywords, syntax, dynamically scoped variables and other basic features of the language are all copied from sh. Other features, e.g., history, are copied from csh and ksh.</p>
+            <p>Bash is a POSIX-compliant shell, but with a number of extensions.</p>
+            <img src="Bash_screenshot.png" alt="">
+            <p>example of a bash session</p>
+        </div>
+      </li>
+      <li id="desktopEnvironment">desktop environment DE<a href="#desktopEnvironment"  class="clickable-heading">desktop environment</a>
+        <div class="content hide">
+            <h2>desktop environment</h2>
+            <p>, a desktop environment (DE) is an implementation of the desktop metaphor made of a bundle of programs running on top of a computer operating system,</p>
+            <p> which share a common graphical user interface (GUI), sometimes described as a graphical shell.</p>
+            <p>The desktop environment was seen mostly on personal computers until the rise of mobile computing.</p>
+            <p>Desktop GUIs help the user to easily access and edit files, while they usually do not provide access to all of the features found in the underlying operating system.</p>
+            <p>Instead, the traditional command-line interface (CLI) is still used when full control over the operating system is required.</p>
+            <p>A desktop environment typically consists of icons, windows, toolbars, folders, wallpapers and desktop widgets (see Elements of graphical user interfaces and WIMP).</p>
+            <p>A GUI might also provide drag and drop functionality and other features that make the desktop metaphor more complete.
+            <p> A desktop environment aims to be an intuitive way for the user to interact with the computer using concepts which are similar to those used when interacting with the physical world,</p>
+            <p> such as buttons and windows.</p>
+        </div>
+      </li>
+      <li id="commandLine">command line<a href="#commandLine" class="clickable-heading">command line</a>
+        <div class="content hide">
+            <h2>command line</h2>
+        </div>
+      </li>
+      <li id="shell">shell<a href="#shell" class="clickable-heading">shell</a>
+        <div class="content hide">
+            <h2>shell</h2>
+            <p>command line interpreter that interprets the command line input and instructs the operating system to perform accordingly</p>
+            <p>a shell is a user interface for access to an operating system's services.</p>
+            <p>In general, operating system shells use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation.</p>
+            <p>It is named a shell because it is the outermost layer around the operating system kernel.</p>
+        </div>
+      </li>
+      <li id="bios">BIOS (Basic Input/Output System)<a href="#bios" class="clickable-heading">BIOS</a>
+        <div class="content hide">
+            <h2>BIOS (Basic Input/Output System)</h2>
+            <p>Starting an x86-based Linux system involves a number of steps.</p>
+            <p>When the computer is powered on, the Basic Input/Output System (BIOS) initializes the hardware,</p>
+            <p>including the screen and keyboard, and tests the main memory.</p>
+            <p>This process is also called POST (Power On Self Test).</p>
+            <p>The BIOS software is stored on a ROM chip on the motherboard.</p>
+            <p> After this, the remainder of the boot process is controlled by the operating system (OS).</p>
+            <img src="BIOS.jpg" alt="">
+        </div>
+      </li>
+      <li id="partitions">partitions and filesystem<a href="#partitions"  class="clickable-heading">partitions and filesystem</a>
+        <div class="content hide">
+            <h2>partitions and filesystem</h2>
+        </div>
+      </li>
+      <li id="Text-ModeLogin">Text-Mode Login<a href="#Text-ModeLogin"  class="clickable-heading">Text-Mode Login</a>
+        <div class="content hide">
+            <h2>Text-Mode Login</h2>
+            <p>Near the end of the boot process, init starts a number of text-mode login prompts.</p>
+            <p>These enable you to type your username, followed by your password, and to eventually get a command shell.</p>
+            <p>However, if you are running a system with a graphical login interface, you will not see these at first.</p>
+            <p>the terminals which run the command shells can be accessed using the ALT key plus a function key.
+            <p>Most distributions start six text terminals and one graphics terminal starting with F1 or F2.
+            <p> Within a graphical environment, switching to a text console requires pressing CTRL-ALT + the appropriate function key <b>(with F7 or F1 leading to the GUI)</b>.</p>
+            <img src="Text-ModeLogin.jpg" alt="">
+        </div>
+      </li>
+      <li id="InitialRAMDisk">Initial RAM Disk<a href="#InitialRAMDisk"  class="clickable-heading">Initial RAM Disk</a>
+        <div class="content hide">
+            <h2>Initial RAM Disk</h2>
+            <p>RAM (Random Access Memory)</p>
+            <p>The initramfs filesystem image contains programs and binary files that perform all actions needed to mount the proper root filesystem,</p>
+            <p>like providing kernel functionality for the needed filesystem and device drivers for mass storage controllers with a facility called udev (for user device),</p>
+            <p>which is responsible for figuring out which devices are present, locating the device drivers they need to operate properly, and loading them.</p>
+            <p> After the root filesystem has been found, it is checked for errors and mounted.</p>
+            <p>The mount program instructs the operating system that a filesystem is ready for use,</p>
+            <p>and associates it with a particular point in the overall hierarchy of the filesystem (the mount point).</p>
+            <p>If this is successful, the initramfs is cleared from RAM and the init program on the root filesystem (/sbin/init) is executed.</p>
+            <p>init handles the mounting and pivoting over to the final real root filesystem.
+            <p>If special hardware drivers are needed before the mass storage can be accessed, they must be in the initramfs image.</p>
+            <img src="InitialRAMDisk.jpg" alt="">
+        </div>
+      </li>
+      <li id="uefi">UEFI<a href="#uefi"  class="clickable-heading">UEFI</a>
+        <div class="content hide">
+            <h2>UEFI (Unified Extensible Firmware Interface)</h2>
+        </div>
+      </li>
+      <li id="grub">GRUB<a href="#grub"  class="clickable-heading">GRUB</a>
+        <div class="content hide">
+            <h2>GRUB (GRand Unified Bootloader)</h2>
+            <p>GRUB is the most popular and the most feature-packed boot loader for the Linux operating system.</p>
+            <p> It is based on the now obsolete GRUB Legacy, which was created in 1995 by Erich Boleyn for the operating system GNU/Hurd.</p>
+            <p> GRUB supports both BIOS and UEFI, and it can handle all popular Linux file systems, including Btrfs, ext4, ReiserFS v3, VFAT, and XFS.</p>
+            <p> Compared to GRUB Legacy, modern GRUB is cleaner, more powerful, and safer.</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="sidenav">
+      <div class="bootProcess">
+        <h2>The boot process</h2>
+        <img src="bootProcess.jpg" alt="">
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
