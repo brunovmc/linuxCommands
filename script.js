@@ -90,3 +90,12 @@ function toggleDocs(event) {
 }
 
 document.addEventListener('click', toggleDocs, true);
+
+
+document.onreadystatechange = function () {
+  if (document.readyState === "interactive") {
+    var number = document.getElementById("myUL").getElementsByTagName("li").length;
+    console.log(number)
+    document.getElementById("knownCommands").innerHTML = number;
+  }
+}
