@@ -112,8 +112,8 @@ body{
 	font-size: 0.9em;
 	display: inline;
 	position: fixed;
-	margin-left: -12.8%;
-	margin-top: -16.8%;
+	margin-left: -64.8%;
+	margin-top: 32.8%;
 	z-index: -2;
 	transform: rotate(-13deg);
 }
